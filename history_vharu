@@ -1,0 +1,734 @@
+ 1  sudo docker info
+    2  vim /etc/docker/
+    3  sudo apt-get update
+    4  sudo apt-get ugrade
+    5  sudo apt-get upgreade
+    6  sudo apt-get upgrade
+    7  reboot
+    8  sudo reboot
+    9  sudo docker info
+   10  sudo docker
+   11  sudo docker config
+   12  sudo docker config ls
+   13  sudo docker swarm init
+   14  sudo docker config ls
+   15  docker swarm join --token SWMTKN-1-27cg4pm76ar5e8hmj00dff3riqc7rbk2gbgimt256ot0swoss8-3jr5xsc4n5kqytwf7iinl8sto 10.4.0.4:2377
+   16  sudo docker config ls
+   17  sudo docker image list
+   18  sudo docker image
+   19  sudo docker image ls
+   20  sudo su - root
+   21  screen -ls
+   22  screen -r 65116
+   23  docker info | grep "Storage Driver"
+   24  docker info
+   25  cd compilebox/compilebox-master/
+   26  ll
+   27  cd API/
+   28  ll
+   29  ls -la
+   30  rm \*\:port
+   31  ll
+   32  rm port
+   33  ll
+   34  screen -r 65116
+   35  netstat -anot
+   36  netstat -anot | grep 8080
+   37  ll "/home/vharutyunyan/compilebox/compilebox-master/API/temp/42bd2a1cf5eadb005ed7"
+   38  ll "/home/vharutyunyan/compilebox/compilebox-master/API/temp/*"
+   39  ll /home/vharutyunyan/compilebox/compilebox-master/API/temp/*
+   40  vim /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh
+   41  sudo su - root
+   42  locate script.sh
+   43  sudo su -
+   44  sudo su - root
+   45  cd compilebox/
+   46  l
+   47  ll
+   48  cd compilebox-master/
+   49  ll
+   50  cd Setup/
+   51  ll
+   52  cat Install_16.04.sh
+   53  cat ./UpdateDocker.sh
+   54  #docker build -t 'virtual_machine' - < Dockerfile
+   55  df -h
+   56  docker build -t 'virtual_machine1' - < Dockerfile
+   57  vim Dockerfile
+   58  docker list
+   59  docker image list
+   60  docker images -a
+   61  docker rmi *
+   62  docker rmi chug/ubuntu14.04x64 chug/ubuntu14.04x64:latest virtual_machine virtual_machine1 virtual_machine1:latest virtual_machine:latest
+   63  docker images purge
+   64  docker images -a
+   65  docker images
+   66  docker images list
+   67  docker build -t 'virtual_machine' - < Dockerfile
+   68  sudo su - root
+   69  docker build -t 'virtual_machine' - < Dockerfile
+   70  vim Dockerfile
+   71  docker build -t 'virtual_machine' - < Dockerfile
+   72  vim Dockerfile
+   73  docker build -t 'virtual_machine' - < Dockerfile
+   74  vim Dockerfile
+   75  docker images
+   76  docker rmi $(docker images -a -q)
+   77  docker images -a -q
+   78  docker rmi 60cbbcda7592
+   79  docker rmi 362539b70b71
+   80  docker ps -a
+   81  docker rm 6818a4e813e7
+   82  docker rm 06bbbfff5fec
+   83  docker rm 4732cf7d989b
+   84  docker rm 15c3114f68b4
+   85  docker ps -a
+   86  docker rmi $(docker images -a -q)
+   87  docker images -a -q
+   88  vim Dockerfile
+   89  docker build -t 'virtual_machine' - < Dockerfile
+   90  docker images -a -q
+   91  docker images -a
+   92  docker image list
+   93  docker exec it virtual_machine bash
+   94  docker exec -it virtual_machine bash
+   95  docker run --name virtual_machine_bash --rm -i -t virtual_machine
+   96  sudo docker run --name virtual_machine_bash --rm -i -t virtual_machine
+   97  docker run virtual_machine
+   98  docker exec -ti virtual_machine sh
+   99  docker run --name virtual_machine_bash --rm -i -t virtual_machine:latest
+  100  sudo systemctl | grep docker
+  101  docker images
+  102  docker images list
+  103  docker image list
+  104  docker run -i -t virtual_machine:latest /bin/bash
+  105  docker image list
+  106  docker ps -a
+  107  docker ps -a -f status=exited
+  108  docker rm $(docker ps -a -f status=exited -q)
+  109  docker run -i -t --rm virtual_machine:latest /bin/bash
+  110  docker ps -a -f status=exited
+  111  docker run -i -t --rm virtual_machine:latest /bin/bash
+  112  docker ps -a -f status=exited
+  113  docker ps -a -f
+  114  docker ps -a
+  115  ..
+  116  ll
+  117  cd ..
+  118  ll
+  119  cd API/
+  120  ll
+  121  vim app.js
+  122  ll
+  123  vim DockerSandbox.js
+  124  ll
+  125  vim DockerTimeout.sh
+  126  man docker
+  127  man docker-rm
+  128  vim DockerTimeout.sh
+  129  vim DockerSandbox.js
+  130  ll
+  131  vim Payload/create_user.sql
+  132  vim Payload/script.sh
+  133  ll
+  134  vim node_modules/destroy/package.json
+  135  ll
+  136  vim temp/ReadMe.txt
+  137  touch temp/vardan
+  138  ll /tmp/
+  139  ll temp/
+  140  ll
+  141  grep "docker" *
+  142  vim DockerTimeout.sh
+  143  man docker
+  144  man docker
+  145  vim DockerTimeout.sh
+  146  man docker
+  147  vim DockerTimeout.sh
+  148  iptables-save
+  149  sudo iptables-save
+  150  ll
+  151  vim app.js
+  152  sudo  nodejs app.js
+  153  vim app.js
+  154  sudo  nodejs app.js
+  155  vim app.js
+  156  sudo  nodejs app.js
+  157  vim app.js
+  158  sudo  nodejs app.js
+  159  grep express *
+  160  vim package.json
+  161  grep express *
+  162  grep -R express *
+  163  grep -R express * | less
+  164  cd ..
+  165  cat Setup/Dockerfile
+  166  cat Setup/Dockerfile  | more
+  167  ll
+  168  cd API/
+  169  ll
+  170  ifconfig
+  171  ll
+  172  vim app.js
+  173  sudo  nodejs app.js
+  174  vim app.js
+  175  sudo  nodejs app.js
+  176  vim app.js
+  177  sudo  nodejs app.js
+  178  vim app.js
+  179  sudo  nodejs app.js
+  180  grep DockerTimeout.sh *
+  181  docker ps -a
+  182  docker ps -a a
+  183  docker ps -a -q
+  184  docker ps -a q
+  185  docker ps -a
+  186  docker images
+  187  docker image list
+  188  history | grep docker
+  189  docker exec -it virtual_machine bash
+  190  docker run --rm -i -t virtual_machine:latest /bin/bash
+  191  cd /tmp/
+  192  ll
+  193  cd ~
+  194  ll
+  195  vim file.sh
+  196  #/home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/compilebox/compilebox-master/API/temp/3c79ed9d502abf4fc10c":/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  197  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  198  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  199  ll
+  200  docker ps -a q
+  201  docker ps -a
+  202  docker ps -a -a
+  203  docker ps -a q
+  204  docker ps -a -q
+  205  docker ps -a -g
+  206  docker run --rm -i -v -v  "/home/vharutyunyan/":/usercode -t virtual_machine:latest /bin/bash
+  207  docker run --rm -i -v  "/home/vharutyunyan/":/usercode -t virtual_machine:latest /bin/bash
+  208  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  209  cp /home/vharutyunyan/compilebox/compilebox-master/API/Payload .
+  210  cp /home/vharutyunyan/compilebox/compilebox-master/API/Payload/script.sh .
+  211  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  212  ll
+  213  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  214  ll
+  215  vim /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh
+  216  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  217  docker run --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh bash file.sh
+  218  ll
+  219  docker run --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh sdfgs file.sh
+  220  ll
+  221  ls -lrt
+  222  ls -lart
+  223  docker run --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /bin/bash
+  224  docker run --rm -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /bin/bash
+  225  ll
+  226  chmod 777 script.sh
+  227  touch logfile.txt
+  228  touch errors
+  229  chmod 777 logfile.txt
+  230  chmod 777 errors
+  231  vim script.sh
+  232  echo "Test me" >"/usercode/inputFile"
+  233  echo "Test me" >inputFile
+  234  chmod 777 inputFile
+  235  docker run --rm -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /bin/bash
+  236  ll
+  237  ls -lrt
+  238  cat errors
+  239  cat logfile.txt
+  240  vim file.sh
+  241  docker run --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  242  ls -lrt
+  243  cat logfile.txt
+  244  top
+  245  free -G
+  246  free -g
+  247  docker run --memory=256m --cpus="0.5" --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  248  cat logfile.txt
+  249  vim file.sh
+  250  cat /proc/cpuinfo
+  251  vim file.sh
+  252  free -m
+  253  docker run --memory=256m --cpus="0.5" --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  254  cat logfile.txt
+  255  cat errors
+  256  docker run --memory=256m --cpus="0.5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  257  cat errors
+  258  ls -lart
+  259  cat completed
+  260  top
+  261  uname -a
+  262  nproc
+  263  vim file.sh
+  264  docker run --memory=256m --cpus="0.5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  265  cat completed
+  266  docker run --memory=256m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  267  cat completed
+  268  docker run --memory=256m --cpus=".5" --rm /bin/bash
+  269  docker run --memory=256m --cpus=".5" --rm -it /bin/bash
+  270  docker run --memory=256m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  271  docker info
+  272  docker run --memory=128m --memory-swap=256m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  273  docker run --memory=64m --memory-swap=128m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  274  docker run --memory=64m --memory-swap=0 --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  275  docker run --memory=128m --memory-swap=0 --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  276  docker run --memory=256m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  277  free -g
+  278  docker run --memory=128m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  279  docker run --memory=4m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+  280  sudo su - root
+  281  #docker run --memory=256m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  282  cat file.sh
+  283  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  284  cat completed
+  285  vim file.sh
+  286  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  287  screen -ls
+  288  screen -r 65116
+  289  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  290  cat logfile.txt
+  291  ps -ef | grep docker
+  292  ls -lrt
+  293  ps -ef | grep docker
+  294  ls -lrt
+  295  cat completed
+  296  vim file.sh
+  297  docker run --memory=6m --cpus="1" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  298  ls -lrt
+  299  cat completed
+  300  docker run --memory=6m --cpus="1" --rm -it virtual_machine /bin/bash
+  301  docker run --memory 6m --cpus 1 --rm -it virtual_machine /bin/bash
+  302  docker run --memory 6m --cpu-quota 100000 --rm -it virtual_machine /bin/bash
+  303  sudo systemctl enable docker
+  304  sudo systemctl stop docker
+  305  /etc/init.d/docker stop
+  306  sudo /etc/init.d/docker stop
+  307  ps -ef | grep docker
+  308  sudo systemctl start docker
+  309  sudo systemctl status docker
+  310  docker run --memory 6m --cpu-quota 100000 --rm -it virtual_machine /bin/bash
+  311  df -h
+  312  cat /etc/fstab
+  313  vim /etc/fstab
+  314  sudo vim /etc/fstab
+  315  sudo mount -t cgroup cgroup /sys/fs/cgroup
+  316  umount /sys/fs/cgroup
+  317  sudo umount /sys/fs/cgroup
+  318  sudo vim /etc/fstab
+  319  sudo vim  /etc/default/grub
+  320  sudo aptitude install cgroupfs-mount
+  321  sudo apt-get install cgroupfs-mount
+  322  sudo reboot
+  323  docker run --memory 6m --cpu-quota 100000 --rm -it virtual_machine /bin/bash
+  324  sudo docker run --memory 6m --cpu-quota 100000 --rm -it virtual_machine /bin/bash
+  325  sudo docker run --memory 6m --cpus 1 --rm -it virtual_machine /bin/bash
+  326  sudo docker run --memory 6m --cpu-quota 100000 --rm -it virtual_machine /bin/bash
+  327  sudo docker run --memory 6m --cpu-period=50000 --cpu-quota=25000 --rm -it virtual_machine /bin/bash
+  328  sudo docker run --memory 6m --cpuset-cpus="0" --rm -it virtual_machine /bin/bash
+  329  sudo docker run --memory 6m  --rm -it virtual_machine /bin/bash
+  330  docker ps
+  331  docker ps -a
+  332  docker docker ps -a -f status=exited
+  333  docker ps -a -f status=exited
+  334  docker rm $(docker ps -a -q)
+  335  docker -f rm $(docker ps -a -q)
+  336  docker rm $(docker ps -a -q) -f
+  337  docker ps -a -q
+  338  docker ps
+  339  docker ps -a
+  340  cd compilebox/compilebox-master/
+  341  ll
+  342  cd Setup/
+  343  ll
+  344  cat Dockerfile
+  345  cd ..
+  346  mkdir cleandocker
+  347  cd cleandocker/
+  348  vim Dockerfile
+  349  docker build -t ubuntu_clean .
+  350  vim Dockerfile
+  351  vim ../compilebox/compilebox-master/Setup/Dockerfile
+  352  vim Dockerfile
+  353  docker build -t ubuntu_clean .
+  354  vim Dockerfile
+  355  docker build -t ubuntu_clean .
+  356  vim Dockerfile
+  357  docker build -t ubuntu_clean .
+  358  vim Dockerfile
+  359  docker build -t ubuntu_clean .
+  360  docker images
+  361  docker rm ubuntu_clean
+  362  docker images -a
+  363  docker images -a -q
+  364  docker images -a
+  365  docker rmi 39fbd98e0ed0 39fbd98e0ed0 d649d36c1d75 f2ba019eb786 c48920774b2f ce15f2a623a8
+  366  docker images -a
+  367  docker rmi f2ba019eb786
+  368  docker ps
+  369  docker ps -a
+  370  docker rm f2ba019eb786
+  371  docker rm 3ec1b9abbab9
+  372  docker rmi f2ba019eb786
+  373  docker images -a
+  374  docker build -t ubuntu_clean .
+  375  docker images -a
+  376  docker ps -a
+  377  docker build -t ubuntu_clean .
+  378  docker ps -a
+  379  docker images -a
+  380  docker run -it ubuntu_clean bash
+  381  docker ps
+  382  docker ps -a
+  383  docker attach 16e8de611e0c
+  384  docker start 16e8de611e0c
+  385  docker attach 16e8de611e0c
+  386  docker start 16e8de611e0c
+  387  docker ps
+  388  docker rm 16e8de611e0c
+  389  docker rm 16e8de611e0c -f
+  390  docker ps -a
+  391  docker run -it ubuntu_clean bash
+  392  docker ps -a
+  393  docker rm b2c07b3383bb
+  394  docker ps -a
+  395  docker ps -a -q
+  396  docker run -it ubuntu_clean
+  397  docker ps -a -q
+  398  docker start 707802fa5145
+  399  docker ps
+  400  docker run -rm -d -it ubuntu_clean
+  401  docker run rm -d -it ubuntu_clean
+  402  docker run --rm -d -it ubuntu_clean
+  403  docker ps
+  404  docker ps -a
+  405  docker stop 468db44a15c4
+  406  docker stop 707802fa5145
+  407  docker rm 468db44a15c4 707802fa5145
+  408  docker ps -a
+  409  docker images
+  410  ll
+  411  ls -la
+  412  cd ..
+  413  cd compilebox/compilebox-master/
+  414  ll
+  415  cd API/
+  416  ll
+  417  screen
+  418  screen -ls
+  419  screen -r 24533
+  420  top
+  421  screen -r 24533
+  422  docker volume ls
+  423  docker ps -a
+  424  top
+  425  docker ps -a
+  426  screen -r 24533
+  427  docker ps -a
+  428  screen -r 24533
+  429  docker ps -a
+  430  screen -r 24533
+  431  cd compilebox/compilebox-master/
+  432  ll
+  433  cd API/
+  434  ll
+  435  history | grep usercode
+  436  ll
+  437  cd Payload/
+  438  ll
+  439  vim script.sh
+  440  cd ..
+  441  ll
+  442  vim compilers.js
+  443  vim app.js
+  444  ll
+  445  vim DockerSandbox.js
+  446  screen -r 24533
+  447  docker ps -a
+  448  screen -r 24533
+  449  cd ..
+  450  chmod 777 vharutyunyan/
+  451  cd /home/vharutyunyan/compilebox/
+  452  ll
+  453  chmod -r 777 compilebox-master/
+  454  chmod -r 777 *
+  455  chmod -R 777 *
+  456  sudo chmod -R 777 *
+  457  cd ..
+  458  sudo chmod 777 compilebox
+  459  ll
+  460  cd compilebox/compilebox-master/
+  461  pwd
+  462  ll
+  463  cd API/
+  464  ll
+  465  pwd
+  466  ll
+  467  vim DockerSandbox.js
+  468  screen -r 24533
+  469  cd ..
+  470  ll
+  471  ls -lrt
+  472  vim script.sh
+  473  top
+  474  history | grep Dock
+  475  ll
+  476  vim file.sh
+  477  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  478  ls -lrt
+  479  cat errors
+  480  touch logfile.txt
+  481  /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/vharutyunyan/":/usercode virtual_machine /usercode/script.sh bash file.sh
+  482  vim file.sh
+  483  screen -r 24533
+  484  ll
+  485  nodejs app.js
+  486  docker ps -a
+  487  nodejs app.js
+  488  ll
+  489  cd Payload/
+  490  vim sql_runner.sh
+  491  cd Payload/
+  492  cd ..
+  493  nodejs app.js
+  494  cd Payload/
+  495  cat sql_runner.sh
+  496  docker run --memory 6m --cpuset-cpus="0" --rm -it virtual_machine /bin/bash
+  497  docker ps -a
+  498  docker run --memory 128m --cpuset-cpus="0,1" --rm -it virtual_machine /bin/bash
+  499  docker ps -a
+  500  cd ..
+  501  sudo nodejs app.js
+  502  locate buffer.js
+  503  python
+  504  sudo nodejs app.js
+  505  vim /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh
+  506  vim Payload/script.sh
+  507  sudo nodejs app.js
+  508  vim Payload/script.sh
+  509  sudo nodejs app.js
+  510  vim /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh
+  511  sudo nodejs app.js
+  512  vim /home/vharutyunyan/compilebox/compilebox-master/API/DockerTimeout.sh
+  513  vim Payload/script.sh
+  514  sudo nodejs app.js
+  515  vim Payload/script.sh
+  516  sudo nodejs app.js
+  517  vim Payload/script.sh
+  518  sudo nodejs app.js
+  519  vim Payload/script.sh
+  520  sudo nodejs app.js
+  521  vim Payload/script.sh
+  522  sudo nodejs app.js
+  523  vim Payload/script.sh
+  524  sudo nodejs app.js
+  525  vim Payload/script.sh
+  526  sudo nodejs app.js
+  527  vim Payload/script.sh
+  528  sudo nodejs app.js
+  529  while true; do sudo nodejs app.js; done
+  530  vim Payload/javaRunner.sh
+  531  while true; do sudo nodejs app.js; done
+  532  vim Payload/script.sh
+  533  while true; do sudo nodejs app.js; done
+  534  vim Payload/script.sh
+  535  while true; do sudo nodejs app.js; done
+  536  vim Payload/script.sh
+  537  while true; do sudo nodejs app.js; done
+  538  cat Payload/javaRunner.sh
+  539  vim Payload/javaRunner.sh
+  540  while true; do sudo nodejs app.js; done
+  541  vim DockerTimeout.sh
+  542  vim app.js
+  543  ll
+  544  vim DockerSandbox.js
+  545  vim app.js
+  546  while true; do sudo nodejs app.js; done
+  547  top
+  548  docker ps -a
+  549  while true; do sudo nodejs app.js; done
+  550  sudo docker run --memory 6m --cpus 1 --rm -it virtual_machine /bin/bash
+  551  history | grep docker
+  552  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  553  ll
+  554  cd ~
+  555  ls -lrt
+  556  cat completed
+  557  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  558  ls -lrt
+  559  cat completed
+  560  cat file.sh
+  561  while true; do sudo nodejs app.js; done
+  562  cd compilebox/compilebox-master/API/
+  563  ll
+  564  while true; do sudo nodejs app.js; done
+  565  ll
+  566  vim compilers.js
+  567  sudo docker run --memory 6m --cpus 1 --rm -it virtual_machine /bin/bash
+  568  ll
+  569  vim DockerTimeout.sh
+  570  while true; do sudo nodejs app.js; done
+  571  history
+  572  ll /opt/compilebox/compilebox-master/
+  573  ll
+  574  ll /opt/compilebox/compilebox-master/
+  575  ll /opt/compilebox/compilebox-master/API/
+  576  sudo su - root
+  577  history | grep node
+  578  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  579  ls -lrt
+  580  cat completed
+  581  vim script.sh
+  582  docker run --memory=6m --cpus=".5" --rm -d -u mysql -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  583  ls -lrt
+  584  cat errors
+  585  cat completed
+  586  :>completed
+  587  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  588  ls -lrt
+  589  cat inputFile
+  590  vim script.sh
+  591  vim file.sh
+  592  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  593  ll
+  594  ls -l
+  595  cat completed
+  596  ls -lrt
+  597  cat completed
+  598  cat script.sh
+  599  bash file.sh -< inputFile
+  600  bash file.sh "$(< inputFile)"
+  601  vim script.sh
+  602  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  603  cat completed
+  604  ls -lrt
+  605  cat errors
+  606  ./script.sh bash file.sh
+  607  vim script.sh
+  608  bash -x ./script.sh bash file.sh
+  609  bash -x ./script.sh bash file.sh output
+  610  sudo su - root
+  611  bash -x ./script.sh bash file.sh output
+  612  ls -lrt
+  613  vim script.sh
+  614  ls -lrt
+  615  vim script.sh
+  616  bash -x ./script.sh bash file.sh output
+  617  sudo yum install bc
+  618  sudo apt-get install bc
+  619  bash -x ./script.sh bash file.sh output
+  620  vim script.sh
+  621  bash -x ./script.sh bash file.sh
+  622  vim script.sh
+  623  bash -x ./script.sh bash file.sh
+  624  vim script.sh
+  625  bash -x ./script.sh bash file.sh
+  626  vim script.sh
+  627  cp script.sh script.sh.orig
+  628  vim script.sh
+  629  bash -x ./script.sh bash file.sh
+  630  sudo bash -x ./script.sh bash file.sh
+  631  vim script.sh
+  632  ll /temp/inputFile
+  633  vim script.sh
+  634  sudo bash -x ./script.sh bash file.sh
+  635  vim script.sh
+  636  sudo bash -x ./script.sh bash file.sh
+  637  vim script.sh
+  638  sudo bash -x ./script.sh bash file.sh
+  639  vim script.sh
+  640  sudo bash -x ./script.sh bash file.sh
+  641  vim script.sh
+  642  sudo bash -x ./script.sh bash file.sh
+  643  vim script.sh
+  644  sudo bash -x ./script.sh bash file.sh
+  645  vim script.sh
+  646  sudo bash -x ./script.sh bash file.sh
+  647  vim script.sh
+  648  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  649  ls -lrt
+  650  cat completed
+  651  vim script.sh
+  652  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  653  docker logs 5a8a04bb52e96c6e978e835f9192d54f699f84b80e1b38526ad7a1cc6f9e2522
+  654  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -a -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  655  vim script.sh
+  656  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  657  ll
+  658  ls -lrt
+  659  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  660  vim script.sh
+  661  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  662  ls -lrt
+  663  cat stdout_stderr.log
+  664  vim file.sh
+  665  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh /bin/bash file.sh
+  666  ls -lrt
+  667  cat stdout_stderr.log
+  668  docker run --memory=6m --cpus=".5" --rm -d -u root -e NODE_PATH=/usr/local/lib/node_modules -i -t -v /home/vharutyunyan/:/usercode virtual_machine /usercode/script.sh "/bin/bash -x " file.sh
+  669  ls -lrt
+  670  cat stdout_stderr.log
+  671  sudo su - root
+  672  history | grep docker
+  673  ll
+  674  cd /opt/compilebox/compilebox-master/
+  675  ll
+  676  cd Setup/
+  677  vim Dockerfile
+  678  cat Dockerfile
+  679  cd /tmp/
+  680  wget https://swift.org/builds/swift-4.0.3-release/ubuntu1610/swift-4.0.3-RELEASE/swift-4.0.3-RELEASE-ubuntu16.10.tar.gz
+  681  tar xzf swift-4.0.3-RELEASE-ubuntu16.10.tar.gz
+  682  ls -lrt
+  683  vim Dockerfile
+  684  cd /opt/compilebox/compilebox-master/Setup/
+  685  vim Dockerfile
+  686  history | grep -i docker | less
+  687  docker build -t 'virtual_machine1' - < Dockerfile
+  688  vim Dockerfile
+  689  docker build -t 'virtual_machine1' - < Dockerfile
+  690  vim Dockerfile
+  691  docker build -t 'virtual_machine1' - < Dockerfile
+  692  vim Dockerfile
+  693  docker build -t 'virtual_machine1' - < Dockerfile
+  694  vim Dockerfile
+  695  docker build -t 'virtual_machine1' - < Dockerfile
+  696  history | grep -i docker | less
+  697  docker run --rm -i -t virtual_machine:latest /bin/bash
+  698  history | grep -i docker | less
+  699  docker images list
+  700  history | grep -i docker | less
+  701  docker image list
+  702  docker run --rm -i -t virtual_machine1:latest /bin/bash
+  703  docker build -t 'virtual_machine1' - < Dockerfile
+  704  docker run --rm -i -t virtual_machine1:latest /bin/bash
+  705  docker build -t 'virtual_machine' - < Dockerfile
+  706  docker run --rm -i -t virtual_machine:latest /bin/bash
+  707  brew cask install docker
+  708  apt install linuxbrew-wrapper
+  709  sudo apt install linuxbrew-wrapper
+  710  brew cask install docker
+  711  brew install bash-completion
+  712  brew install docker-completion
+  713  brew install docker-compose-completion
+  714  brew install docker-machine-completion
+  715  ll
+  716  cd cleandocker/
+  717  ll
+  718  vim Dockerfile
+  719  cd /opt/compilebox/compilebox-master/
+  720  cd Setup/
+  721  ll
+  722  cat Dockerfile
+  723  ll
+  724  vim UpdateDocker.sh
+  725  docker images
+  726  history
+  727  sudo apt-get install mutt
+  728  mutt mutt -s "Test from mutt" hvardan71@gmail.com < /tmp/message.txt
+  729  mutt mutt -s "Test from mutt" hvardan71@gmail.com < /dev/null
+  730  mailq
+  731  less /var/log/mail.log
+  732  mailq
+  733  ll
+  734  history > /tmp/message.txt

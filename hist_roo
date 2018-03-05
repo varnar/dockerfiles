@@ -1,0 +1,162 @@
+  1  apt-get update
+    2  apt-get upgrade
+    3  reboot
+    4  history
+    5  iptables-save
+    6  systemctl restart iptables
+    7  iptables -D -t nat -A PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
+    8  iptables -D -t PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
+    9  iptables -D -t nat PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
+   10  iptables -L
+   11  systemctl -l
+   12  systemctl -l | grep iptables
+   13  iptables-save
+   14  iptables-D PREROUTING -p tcp -m tcp --dport 8082 -j REDIRECT --to-ports 8080
+   15  iptables -D PREROUTING -p tcp -m tcp --dport 8082 -j REDIRECT --to-ports 8080
+   16  screen -l
+   17  iptables-save
+   18  PREROUTING -p tcp -m tcp --dport 8082 -j REDIRECT --to-ports 8080
+   19  iptables -L --line-numbers
+   20  iptables-save
+   21  iptables -D -t nat PREROUTING -p tcp -m tcp --dport 8082 -j REDIRECT --to-ports 8080
+   22  iptables -D PREROUTING -p tcp -m tcp --dport 8082 -j REDIRECT --to-ports 8080
+   23  ufw --help
+   24  ufw reload
+   25  iptables-save
+   26  iptables -D PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
+   27  iptables-save > /root/firewall.rules
+   28  vim /root/firewall.rules
+   29  iptables -X
+   30  iptables -t nat -F
+   31  iptables -t nat -X
+   32  iptables -t mangle -F
+   33  iptables -t mangle -X
+   34  iptables -P INPUT ACCEPT
+   35  iptables -P FORWARD ACCEPT
+   36  iptables -P OUTPUT ACCEPT
+   37  iptables-save
+   38  iptables -F
+   39  iptables-save
+   40  iptables -F -t security
+   41  iptables-save
+   42  iptables-restore < firewall.rules
+   43  iptables-save
+   44  screen -ls
+   45  history
+   46  docker ps -a
+   47  pwd
+   48  updatedb
+   49  locate script.sh
+   50  vim /home/vharutyunyan/compilebox/compilebox-master/API/Payload/script.sh
+   51  locate usercode
+   52  cd /home/vharutyunyan/compilebox/compilebox-master/API/
+   53  ll
+   54  cd Payload/
+   55  ll
+   56  vim javaRunner.sh
+   57  vim sql_runner.sh
+   58  ll
+   59  vim script.sh
+   60  screen -ls
+   61  docker run --memory=4m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+   62  docker run --memory=4m --memory-swap=4m --cpus=".5" --rm -i -t virtual_machine /bin/bash
+   63  ps -ef | grep dock
+   64  cat /proc/65117/mem
+   65  cat /proc/65117/status
+   66  ps -ef | grep docker
+   67  systemctl stop docker
+   68  ps -ef | grep docker
+   69  systemctl start docker
+   70  ps -ef | grep docker
+   71  cat /proc/106434/status
+   72  ps -ef | grep docker
+   73  cat /proc/106680/status
+   74  ps -ef | grep docker
+   75  ps -ef | grep 106601
+   76  ps -ef | grep 65117
+   77  ll /var/run/docker/libcontainerd/e69b4df524417c533ffbe86785e0b5024373ea31789a0242d8c4d9d46ee5682b
+   78  less /var/run/docker/libcontainerd/e69b4df524417c533ffbe86785e0b5024373ea31789a0242d8c4d9d46ee5682b/config.json
+   79  ps -ef | grep 65117
+   80  ps -ef | grep docker
+   81  cat /var/run/docker/libcontainerd/d00d958cbb820d56217199905bfe7c07beb4c1934e1de01863efc74a16787142/config.json
+   82  less /var/run/docker/libcontainerd/d00d958cbb820d56217199905bfe7c07beb4c1934e1de01863efc74a16787142/config.json
+   83  ping 172.17.0.2
+   84  ssh 172.17.0.2/16
+   85  ssh 172.17.0.2
+   86  ps -ef | grep docker
+   87  cat /var/run/docker/libcontainerd/b94b6f6d2a7b762236f80de413860e5365e21a0ee47edb7b7b730171c95d2127/init-stdin
+   88  cat /var/run/docker/libcontainerd/b94b6f6d2a7b762236f80de413860e5365e21a0ee47edb7b7b730171c95d2127/init-stdout
+   89  ls -lrt /var/run/docker/libcontainerd/
+   90  ps -ef | grep docker
+   91  kill -9 107836
+   92  ps -ef | grep docker
+   93  less /var/log/syslog
+   94  cd /home/vharutyunyan/
+   95  cd .ssh/
+   96  ls -lrt
+   97  vimi authorized_keys
+   98  vim authorized_keys
+   99  ll authorized_keys
+  100  date
+  101  ll authorized_keys
+  102  vim authorized_keys
+  103  yum update
+  104  apt-get upgrade
+  105  apt-get dist-upgrade
+  106  reboot
+  107  cd /var/lo
+  108  cd /var/log/
+  109  ls -lrt
+  110  less auth.log
+  111  ll /home/vharutyunyan
+  112  ls -ld /home/vharutyunyan
+  113  chmod 644 /home/vharutyunyan
+  114  cd /home/
+  115  ls -las
+  116  chmod 655 /home/vharutyunyan
+  117  ls -las
+  118  chmod 755 /home/vharutyunyan
+  119  ls -las
+  120  ll sololearn/
+  121  ll /opt/
+  122  cd vharutyunyan/
+  123  ll
+  124  mv compilebox /opt/
+  125  cd /opt/
+  126  ll
+  127  cd compilebox/
+  128  ll
+  129  cd compilebox-master/
+  130  ll
+  131  pwd
+  132  su - vharutyunyan
+  133  su - scololearn
+  134  su - sololearn
+  135  su - vharutyunyan
+  136  deluser hvardan71
+  137  su - sololearn
+  138  screen -ls
+  139  su - sololearn
+  140  apt-get update
+  141  apt-get upgrade
+  142  apt-get dist-upgrade
+  143  apt autoremove
+  144  reboot
+  145  apt autoremove
+  146  history
+  147  history | grep nod
+  148  mkdir /usercode
+  149  ln -s /home/vharutyunyan /usercode/
+  150  ll /
+  151  ll /usercode/
+  152  unlink /usercode/vharutyunyan
+  153  ln -s /home/vharutyunyan /usercode
+  154  ll /
+  155  ll /usercode/
+  156  unlink /usercode/vharutyunyan
+  157  rmdir /usercode/
+  158  ln -s /home/vharutyunyan /usercode
+  159  ll /
+  160  history
+  161  history  | grep docker
+  162  history > /tmp/message.txt

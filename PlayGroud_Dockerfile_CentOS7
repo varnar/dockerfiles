@@ -1,17 +1,33 @@
-FROM ubuntu:16.04
-
-ENV DEBIAN_FRONTEND noninteractive
-
+### BECAUSE ISSUE WITH SWIFT ON CENTOS - GOING BACK TO UBUNTU ###
+FROM centos:7
+ENV container docker
 MAINTAINER Vardan Harutyunyan <hvardan71@gmail.com>
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
+systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+rm -f /lib/systemd/system/multi-user.target.wants/*;\
+rm -f /etc/systemd/system/*.wants/*;\
+rm -f /lib/systemd/system/local-fs.target.wants/*; \
+rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
+rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
+rm -f /lib/systemd/system/basic.target.wants/*;\
+rm -f /lib/systemd/system/anaconda.target.wants/*;
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/usr/sbin/init"]
+
+RUN yum -y update
+RUN yum -y install epel*
+RUN yum -y install sudo gcc gcc-c++
+RUN yum -y install clang libicu libicu-devel wget python-libs  python-devel  libxml2 rsync  
+
 
 # Update the repository sources list
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" >> /etc/apt/sources.libicu52 
 RUN apt-get update && \
     apt-get install -y apt-utils && \
     apt-get dist-upgrade -y && \
     apt-get install -y tzdata nano && \
     apt-get install -y sudo gcc g++ && \
-    apt-get install -y clang libicu-dev wget libpython2.7 libxml2 python2.7-dev libicu52 rsync
+    apt-get install -y clang libicu52 libicu-dev wget libpython2.7 libxml2 python2.7-dev  rsync
 
 #Installing necessary packages for Swift
 RUN cd /tmp && \

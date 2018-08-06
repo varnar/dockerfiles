@@ -1,0 +1,83 @@
+FROM ubuntu:16.04
+
+ENV DEBIAN_FRONTEND noninteractive
+
+MAINTAINER Vardan Harutyunyan <hvardan71@gmail.com>
+
+# Update the repository sources list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" >> /etc/apt/sources.list
+RUN apt-get update && \
+    apt-get install -y apt-utils && \
+    apt-get dist-upgrade -y && \
+    apt-get install -y tzdata nano && \
+    apt-get install -y sudo gcc g++ && \
+    apt-get install -y clang libicu-dev wget libpython2.7 libxml2 python2.7-dev libicu52 rsync
+
+#Installing necessary packages for Swift
+RUN cd /tmp && \
+    wget -q https://swift.org/builds/swift-4.0.3-release/ubuntu1604/swift-4.0.3-RELEASE/swift-4.0.3-RELEASE-ubuntu16.04.tar.gz && \
+    tar -vxzf swift-4.0.3-RELEASE-ubuntu16.04.tar.gz && mkdir /usr/local/swift-4.0.3/ && \
+    \mv -vf /tmp/swift-4.0.3-RELEASE-ubuntu16.04/* /usr/local/swift-4.0.3/ && \
+    rm /tmp/swift-4.0.3-RELEASE-ubuntu16.04.tar.gz && \
+    echo "export PATH=/usr/local/swift-4.0.3/usr/bin:$PATH" > /etc/profile.d/swift.sh
+ENV PATH /usr/local/swift-4.0.3/usr/bin:$PATH
+
+#Install all the languages/compilers we are supporting.
+RUN apt-get install -y php5-cli
+RUN apt-get install -y ruby
+RUN apt-get install -y python
+
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+RUN echo "deb http://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+RUN apt-get update
+
+RUN apt-get install -y mono-devel
+
+RUN echo ' using System;\n\
+public class HelloWorld\n\
+{\n\
+    static public void Main ()\n\
+    {\n\
+        Console.WriteLine ("Hello Mono World");\n\
+    }\n\
+}' > /tmp/hello.cs
+
+RUN cat /tmp/hello.cs
+
+RUN cd /tmp && csc /tmp/hello.cs && mono /tmp/hello.exe
+RUN apt-get install -y mono-vbnc
+
+RUN apt-get install -y openjdk-8-jdk openjdk-8-jre && java -version
+
+RUN apt-get install -y npm
+RUN apt-get install -y golang-go
+RUN apt-get install -y nodejs
+
+RUN npm install -g underscore request express jade shelljs passport http sys jquery lodash async mocha moment connect validator restify ejs ws co when helmet wrench brain mustache should backbone forever debug
+
+ENV NODE_PATH /usr/local/lib/node_modules/
+
+RUN apt-get install -y clojure1.6
+
+RUN apt-get install -y python-software-properties
+RUN apt-get install -y software-properties-common
+
+RUN apt-get install -y openjdk-8-jdk openjdk-8-jre
+CMD java -version
+
+RUN apt-get install -y gobjc
+RUN apt-get install -y gnustep-devel &&  sed -i 's/#define BASE_NATIVE_OBJC_EXCEPTIONS     1/#define BASE_NATIVE_OBJC_EXCEPTIONS     0/g' /usr/include/GNUstep/GNUstepBase/GSConfig.h
+
+RUN apt-get install -y scala
+RUN apt-get install -y mysql-server
+RUN apt-get install -y perl
+
+RUN apt-get install -y curl
+
+RUN mkdir -p /opt/rust && \
+    curl https://sh.rustup.rs -sSf | HOME=/opt/rust sh -s -- --no-modify-path -y && \
+    chmod -R 777 /opt/rust
+
+RUN apt-get install -y bc
+
+RUN echo "mysql ALL = NOPASSWD: /usr/sbin/service mysql start" | cat >> /etc/sudoers
